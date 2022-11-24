@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "mongodb": "^4.9.1",
     "vue": "^3.2.13"
   },
   "devDependencies": {
@@ -18,9 +19,7 @@
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-vue": "^8.0.3",
+    "eslint-plugin-vue": "^9.4.0",
     "prettier": "^2.4.1"
   },
   "eslintConfig": {
@@ -29,9 +28,10 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/vue3-essential",
+      "plugin:vue/recommended",
       "eslint:recommended",
-      "plugin:prettier/recommended"
+      "prettier",
+      "prettier/vue"
     ],
     "parserOptions": {
       "parser": "@babel/eslint-parser"
@@ -43,5 +43,5 @@
     "last 2 versions",
     "not dead",
     "not ie 11"
-  ]
+  ],  "proxy": "http://localhost:8080"
 }

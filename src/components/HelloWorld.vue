@@ -1,94 +1,53 @@
+<!-- eslint-disable sort-keys -->
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>
-      For a guide and recipes on how to configure / customize this project,<br />
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener"
-        >vue-cli documentation</a
-      >.
+      Your one stop solution for Problem managemment
     </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel"
-          target="_blank"
-          rel="noopener"
-          >babel</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint"
-          target="_blank"
-          rel="noopener"
-          >eslint</a
-        >
-      </li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li>
-        <a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a>
-      </li>
-      <li>
-        <a href="https://forum.vuejs.org" target="_blank" rel="noopener"
-          >Forum</a
-        >
-      </li>
-      <li>
-        <a href="https://chat.vuejs.org" target="_blank" rel="noopener"
-          >Community Chat</a
-        >
-      </li>
-      <li>
-        <a href="https://twitter.com/vuejs" target="_blank" rel="noopener"
-          >Twitter</a
-        >
-      </li>
-      <li>
-        <a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a>
-      </li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li>
-        <a href="https://router.vuejs.org" target="_blank" rel="noopener"
-          >vue-router</a
-        >
-      </li>
-      <li>
-        <a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a>
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/vue-devtools#vue-devtools"
-          target="_blank"
-          rel="noopener"
-          >vue-devtools</a
-        >
-      </li>
-      <li>
-        <a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener"
-          >vue-loader</a
-        >
-      </li>
-      <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-          rel="noopener"
-          >awesome-vue</a
-        >
-      </li>
-    </ul>
   </div>
 </template>
 
 <script>
+
 export default {
-  name: "HelloWorld",
+  // Mounted () {
+
+  /*
+   *   // eslint-disable-next-line
+   *   fetch('http://localhost:8080/api/auth/signin',{
+   *   // eslint-disable-next-line sort-keys
+   *     headers: {
+   *       'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzeGEzMDU5MCIsImlhdCI6MTY2OTEzOTQ1NCwiZXhwIjoxNjY5MjI1ODU0fQ.osuw523cHOUpG7cFGRqZrfcGumzGI3w_NmLDD1gt-wJCa79piIWRm8Wc7qcZ1duA0b0-95SbwtIMNLGyucIYrw',
+   *       // eslint-disable-next-line sort-keys
+   *       'Accept': 'application/json',
+   *       'Content-Type': 'application/json'
+   *     },
+   *     method: 'GET'}).then((response) => response.json()).
+   *     then((text) => {
+   */
+
+  /*
+   *       // eslint-disable-next-line
+   *       console.log(text);
+   */
+
+  /*
+   *     }).
+   *     catch((error) => {
+   */
+
+  /*
+   *       // eslint-disable-next-line
+   *       console.log(error);
+   *       // eslint-disable-next-line
+   *       console.log('fail ho gya bhai ');
+   */
+
+  //     });
+
+  // },
+  name: 'HelloWorld',
   props: {
     msg: String,
   },
