@@ -36,9 +36,10 @@ Admin Portal
 <input type="password" v-model="this.password"> <br>
 <br>
 <button @click="this.addusertodatabase()"> Submit</button>
-<div v-if="this.vusercreated" id="green"> User Created </div>
+
 
 </div>
+<div v-if="this.vusercreated" id="green"> User Created </div>
 
 <!-- deleting a user -->
 <div v-if="(this.create===false)">
@@ -47,12 +48,12 @@ Admin Portal
    <br>
 
    <button  @click="deleteuserfromdatabase()" >delete user</button>
-   <div v-if="this.vuserdeleted" id="alert"> User Deleted </div>
+
 
 </div>
 <br>
 <button @click="$emit('AdminPortalValue',false)"> Back </button>
-
+<div v-if="this.vuserdeleted" id="alert"> User Deleted </div>
     </div>
 </template>
 <script>
@@ -113,6 +114,7 @@ export default {
         ).then((res) => res.json());
 
         this.vusercreated = true;
+        this.create = null;
 
       }
 
@@ -123,6 +125,7 @@ export default {
       this.userid = null;
       this.validuser = null;
       this.vusercreated = false;
+      this.vuserdeleted = false;
 
     },
     deleteUser () {
@@ -130,6 +133,7 @@ export default {
       this.create = false;
       this.userid = null;
       this.vuserdeleted = false;
+      this.vusercreated = false;
 
     },
     async deleteuserfromdatabase () {
@@ -153,13 +157,18 @@ export default {
         });
 
       this.vuserdeleted = true;
-
+      this.create = null;
+      // eslint-disable-next-line
+ console.log(this.create)
     },
     async validate () {
 
       if (this.userid === '') {
 
         this.validuser = false;
+        this.create = null;
+        // eslint-disable-next-line
+      console.log(this.create)
         return;
 
       }

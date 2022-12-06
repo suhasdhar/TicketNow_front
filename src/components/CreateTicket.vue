@@ -34,8 +34,8 @@
 
 <div v-else>
   <table v-if="!this.viewTicket">
-  <tr> <th>Ticket ID</th> <th>Title</th><th>Status</th><th>Description</th><th>Category</th></tr>
-  <tr id='row' v-for="(item) in fetched" :key="item.userid" @click="view(item)"> <td>{{item.ticketId}} </td><td>{{item.title}} </td><td id="Status">{{item.status}} </td> <td>{{item.description}} </td><td>{{item.category}} </td></tr>
+  <tr> <th>Ticket ID</th> <th>Creation Date</th><th>Title</th><th>Status</th><th>Description</th><th>Category</th></tr>
+  <tr id='row' v-for="(item) in fetched" :key="item.userid" @click="view(item)"> <td>{{item.ticketId}} </td><td>{{item.creationDate}}</td><td>{{item.title}} </td><td id="Status">{{item.status}} </td> <td>{{item.description}} </td><td>{{item.category}} </td></tr>
   </table>
   <div v-else>
     <span id='back' @click="back()">Back</span>

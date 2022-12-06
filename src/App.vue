@@ -2,8 +2,8 @@
 <template>
   <div> <img  class="bg" src="./assets/service-tool-icon-on-white-background-vector-22746653.jpg" />
     <div id="app">
-  <div v-if="this.login" > <NavBar v-on:create-new-ticket="disappearTickets($event)" msg="hey" :isadmin="this.isAdmin"/> </div><br>
- <h2>Welcome <b>{{this.username}}</b></h2>
+  <div v-if="this.login" > <NavBar v-on:create-new-ticket="disappearTickets($event)" msg="hey" :isadmin="this.isAdmin"/><br>
+ <h2>Welcome <b>{{this.username}}</b></h2>  </div>
   <div v-if="this.login === false">
     <img  alt="Ticket Now" src="./assets/ticket.png" />
     <HelloWorld msg="Ticket Now!" />
